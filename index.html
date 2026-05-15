@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netro Cafe & More</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Netro Cafe Logo" class="logo-img" />
+          <span class="logo-text">NETRO <span>CAFE</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reservation.php">Reserve a Table</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="login.php" class="nav-btn">Sign In</a></li> -->
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tag animate-fade-up">Est. 2022 · Mit Ghamr, Egypt</p>
+        <h1 class="hero-title animate-fade-up delay-1">
+          Where Every Sip<br /><em>Tells a Story</em>
+        </h1>
+        <p class="hero-sub animate-fade-up delay-2">
+          Specialty coffee, artisan sweets &amp; chimney cakes crafted with
+          passion.
+        </p>
+        <div class="hero-cta animate-fade-up delay-3">
+          <a href="menu.html" class="btn-primary">Explore Menu</a>
+          <a href="reservation.php" class="btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span></span>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE STRIP ===== -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>☕ Hot Coffee</span><span>🍵 Matcha</span
+        ><span>🧁 Classic Sweets</span> <span>🧇 Waffles</span
+        ><span>🥐 Croissants</span><span>🥤 Milkshakes</span>
+        <span>🍦 Sundae Cups</span><span>🫖 Iced Tea</span
+        ><span>🍹 Fresh Smoothies</span> <span>☕ Hot Coffee</span
+        ><span>🍵 Matcha</span><span>🧁 Classic Sweets</span>
+        <span>🧇 Waffles</span><span>🥐 Croissants</span
+        ><span>🥤 Milkshakes</span> <span>🍦 Sundae Cups</span
+        ><span>🫖 Iced Tea</span><span>🍹 Fresh Smoothies</span>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT TEASER ===== -->
+    <section class="about-teaser section-pad">
+      <div class="container grid-2">
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <div class="about-badge">
+              <img src="images/logo.png" alt="Netro" />
+            </div>
+            <div class="about-card card-float">
+              <i class="fa-solid fa-mug-hot"></i>
+              <div>
+                <strong>100+</strong>
+                <span>Menu Items</span>
+              </div>
+            </div>
+            <div class="about-card card-float2">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <strong>3+ Years</strong>
+                <span>of Excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">
+            More Than Just<br /><em>A Cup of Coffee</em>
+          </h2>
+          <p class="section-desc">
+            Netro Cafe was born in 2022 with a single dream — to create a cozy
+            corner where great coffee meets even greater company. From specialty
+            espresso to indulgent chimney cakes, every item on our menu is
+            crafted with love and the finest ingredients.
+          </p>
+          <div class="about-features">
+            <div class="feat">
+              <i class="fa-solid fa-leaf"></i
+              ><span>Fresh Ingredients Daily</span>
+            </div>
+            <div class="feat">
+              <i class="fa-solid fa-award"></i
+              ><span>Award-Winning Recipes</span>
+            </div>
+            <div class="feat">
+              <i class="fa-solid fa-heart"></i><span>Made with Passion</span>
+            </div>
+          </div>
+          <a href="about.html" class="btn-primary">Discover More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED CATEGORIES ===== -->
+    <section class="categories section-pad bg-dark">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-tag light">What We Serve</p>
+          <h2 class="section-title light">Our <em>Specialties</em></h2>
+        </div>
+        <div class="cat-grid">
+          <a
+            href="menu.html#hot-coffee"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-mug-hot"></i>
+              <h3>Hot Coffee</h3>
+              <span>From 50 EGP</span>
+            </div>
+          </a>
+          <a
+            href="menu.html#iced-coffee"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-glass-water"></i>
+              <h3>Iced Coffee</h3>
+              <span>From 80 EGP</span>
+            </div>
+          </a>
+          <a
+            href="menu.html#matcha"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-leaf"></i>
+              <h3>Matcha</h3>
+              <span>From 80 EGP</span>
+            </div>
+          </a>
+          <a
+            href="menu.html#sweets"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-cake-candles"></i>
+              <h3>Classic Sweets</h3>
+              <span>From 90 EGP</span>
+            </div>
+          </a>
+          <a
+            href="menu.html#chimney"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-fire"></i>
+              <h3>Sweet Chimney</h3>
+              <span>From 120 EGP</span>
+            </div>
+          </a>
+          <a
+            href="menu.html#smoothies"
+            class="cat-card"
+            style="
+              --bg: url(&quot;https://images.unsplash.com/photo-1638176066666-ffb2f013c7dd?w=600&quot;);
+            "
+          >
+            <div class="cat-overlay"></div>
+            <div class="cat-content">
+              <i class="fa-solid fa-blender"></i>
+              <h3>Smoothies</h3>
+              <span>From 80 EGP</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-item" data-count="100">
+          <span class="stat-num" data-target="100">0</span
+          ><span class="stat-plus">+</span>
+          <p>Menu Items</p>
+        </div>
+        <div class="stat-item" data-count="3">
+          <span class="stat-num" data-target="3">0</span
+          ><span class="stat-plus">K+</span>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat-item" data-count="3">
+          <span class="stat-num" data-target="3">0</span
+          ><span class="stat-plus"></span>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat-item" data-count="12">
+          <span class="stat-num" data-target="12">0</span
+          ><span class="stat-plus"></span>
+          <p>Categories</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section-pad bg-cream">
+      <div class="container">
+        <div class="section-header center">
+          <p class="section-tag">What Customers Say</p>
+          <h2 class="section-title">Loved by <em>Many</em></h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "The chimney cakes here are absolutely insane — especially the
+              pistachio one. Nothing like it in Mit Ghamr!"
+            </p>
+            <div class="testi-author">
+              <span class="testi-avatar">S</span><strong>Sara M.</strong>
+            </div>
+          </div>
+          <div class="testi-card featured-testi">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "Best matcha latte I've ever had. The vibe is super cozy, and the
+              staff are incredibly kind. My go-to spot!"
+            </p>
+            <div class="testi-author">
+              <span class="testi-avatar">A</span><strong>Ahmed K.</strong>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>
+              "The san sebastian cheesecake is out of this world. Netro never
+              disappoints — highly recommended!"
+            </p>
+            <div class="testi-author">
+              <span class="testi-avatar">N</span><strong>Nour H.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>Ready for an<br /><em>Unforgettable Experience?</em></h2>
+        <p>
+          Book your table now or come walk in — we're always happy to see you.
+        </p>
+        <a href="reservation.php" class="btn-primary">Reserve a Table</a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Netro" class="footer-logo" />
+          <p>
+            Netro Cafe & More — your cozy destination for specialty coffee,
+            chimney cakes, and unforgettable flavors. Est. 2022.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservation.php">Reservations</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="menu.html#hot-coffee">Hot Coffee</a></li>
+            <li><a href="menu.html#iced-coffee">Iced Coffee</a></li>
+            <li><a href="menu.html#matcha">Matcha</a></li>
+            <li><a href="menu.html#sweets">Classic Sweets</a></li>
+            <li><a href="menu.html#chimney">Sweet Chimney</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> Mit Ghamr, Egypt</li>
+            <li><i class="fa-solid fa-clock"></i> Daily: 9 AM – 1 AM</li>
+            <li><i class="fa-brands fa-facebook-f"></i> Netro.egy</li>
+            <li><i class="fa-brands fa-instagram"></i> Netro.egy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Netro Cafe & More. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

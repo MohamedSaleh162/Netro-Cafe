@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us — Netro Cafe & More</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Netro Cafe Logo" class="logo-img" />
+          <span class="logo-text">NETRO <span>CAFE</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="reservation.php">Reserve a Table</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="login.php" class="nav-btn">Sign In</a></li> -->
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <p class="section-tag light">Who We Are</p>
+        <h1>Our <em>Story</em></h1>
+        <p>Born in Mit Ghamr, built on passion, brewed for you.</p>
+      </div>
+    </div>
+
+    <!-- MISSION SECTION -->
+    <section class="section-pad">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="section-tag">Our Mission</p>
+          <h2 class="section-title">
+            Crafting <em>Moments</em><br />Worth Remembering
+          </h2>
+          <p class="section-desc">
+            At Netro Cafe, we believe every visit should feel special. We source
+            the finest coffee beans, prepare everything fresh, and create an
+            atmosphere that feels like home — but better. Whether you're here
+            for a quiet morning espresso, a sweet afternoon treat, or a cozy
+            evening with friends, we're honored to be part of your day.
+          </p>
+          <div class="about-features">
+            <div class="feat reveal">
+              <i class="fa-solid fa-seedling"></i
+              ><span>Sustainably Sourced Beans</span>
+            </div>
+            <div class="feat reveal">
+              <i class="fa-solid fa-hand-holding-heart"></i
+              ><span>Handcrafted with Love</span>
+            </div>
+            <div class="feat reveal">
+              <i class="fa-solid fa-users"></i><span>Community First</span>
+            </div>
+            <div class="feat reveal">
+              <i class="fa-solid fa-star"></i><span>Consistent Quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div
+            class="about-img-wrap"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&quot;);
+            "
+          >
+            <div class="about-badge">
+              <img src="images/logo.png" alt="Netro" />
+            </div>
+            <div class="about-card card-float">
+              <i class="fa-solid fa-mug-hot"></i>
+              <div><strong>Est. 2022</strong><span>Mit Ghamr, Egypt</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section-pad bg-dark">
+      <div class="container">
+        <div class="section-header center reveal">
+          <p class="section-tag light">What Drives Us</p>
+          <h2 class="section-title light">Our Core <em>Values</em></h2>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 28px;
+            margin-top: 48px;
+          "
+        >
+          <div
+            class="testi-card featured-testi reveal"
+            style="text-align: center; padding: 36px 28px"
+          >
+            <i
+              class="fa-solid fa-award"
+              style="
+                font-size: 2.2rem;
+                color: var(--gold);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: var(--white);
+              "
+            >
+              Quality
+            </h3>
+            <p style="font-size: 0.9rem; font-style: normal">
+              We never compromise. Every item is made with premium ingredients
+              and care.
+            </p>
+          </div>
+          <div
+            class="testi-card featured-testi reveal"
+            style="text-align: center; padding: 36px 28px"
+          >
+            <i
+              class="fa-solid fa-heart"
+              style="
+                font-size: 2.2rem;
+                color: var(--gold);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: var(--white);
+              "
+            >
+              Passion
+            </h3>
+            <p style="font-size: 0.9rem; font-style: normal">
+              Coffee is our art. We pour our hearts into every cup we serve.
+            </p>
+          </div>
+          <div
+            class="testi-card featured-testi reveal"
+            style="text-align: center; padding: 36px 28px"
+          >
+            <i
+              class="fa-solid fa-handshake"
+              style="
+                font-size: 2.2rem;
+                color: var(--gold);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: var(--white);
+              "
+            >
+              Community
+            </h3>
+            <p style="font-size: 0.9rem; font-style: normal">
+              Netro is more than a cafe — it's a gathering place for the people
+              of Mit Ghamr.
+            </p>
+          </div>
+          <div
+            class="testi-card featured-testi reveal"
+            style="text-align: center; padding: 36px 28px"
+          >
+            <i
+              class="fa-solid fa-lightbulb"
+              style="
+                font-size: 2.2rem;
+                color: var(--gold);
+                margin-bottom: 16px;
+                display: block;
+              "
+            ></i>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+                color: var(--white);
+              "
+            >
+              Innovation
+            </h3>
+            <p style="font-size: 0.9rem; font-style: normal">
+              We constantly evolve our menu to bring you new and exciting
+              experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span
+          ><span class="stat-plus">+</span>
+          <p>Menu Items</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span
+          ><span class="stat-plus">K+</span>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="12">0</span>
+          <p>Menu Categories</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>Come Experience<br /><em>Netro Yourself</em></h2>
+        <p>
+          We'd love to see you. Walk in or reserve a table — we're always ready.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="reservation.php" class="btn-primary">Reserve a Table</a>
+          <a href="menu.html" class="btn-outline">View Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Netro" class="footer-logo" />
+          <p>
+            Netro Cafe & More — your cozy destination for specialty coffee,
+            chimney cakes, and unforgettable flavors.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservation.php">Reservations</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="menu.html#hot-coffee">Hot Coffee</a></li>
+            <li><a href="menu.html#iced-coffee">Iced Coffee</a></li>
+            <li><a href="menu.html#matcha">Matcha</a></li>
+            <li><a href="menu.html#chimney">Sweet Chimney</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> Mit Ghamr, Egypt</li>
+            <li><i class="fa-solid fa-clock"></i> Daily: 9 AM – 1 AM</li>
+            <li><i class="fa-brands fa-instagram"></i> Netro.egy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Netro Cafe & More. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

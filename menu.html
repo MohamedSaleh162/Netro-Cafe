@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Netro Cafe & More</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="Netro Cafe Logo" class="logo-img" />
+          <span class="logo-text">NETRO <span>CAFE</span></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reservation.php">Reserve a Table</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="login.php" class="nav-btn">Sign In</a></li> -->
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <p class="section-tag light">Explore</p>
+        <h1>Our <em>Menu</em></h1>
+        <p>
+          Handcrafted drinks, artisan sweets & chimney cakes made fresh every
+          day.
+        </p>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="menu-tabs">
+      <div class="menu-tabs-inner">
+        <button class="tab-btn active" data-target="all">
+          <i class="fa-solid fa-border-all"></i> All
+        </button>
+        <button class="tab-btn" data-target="hot-coffee">
+          <i class="fa-solid fa-mug-hot"></i> Hot Coffee
+        </button>
+        <button class="tab-btn" data-target="hot-drinks">
+          <i class="fa-solid fa-fire"></i> Hot Drinks
+        </button>
+        <button class="tab-btn" data-target="iced-coffee">
+          <i class="fa-solid fa-glass-water"></i> Iced Coffee
+        </button>
+        <button class="tab-btn" data-target="matcha">
+          <i class="fa-solid fa-leaf"></i> Iced Matcha
+        </button>
+        <button class="tab-btn" data-target="iced-tea">
+          <i class="fa-solid fa-mug-saucer"></i> Iced Tea
+        </button>
+        <button class="tab-btn" data-target="milkshakes">
+          <i class="fa-solid fa-blender"></i> Milkshakes
+        </button>
+        <button class="tab-btn" data-target="sundae">
+          <i class="fa-solid fa-ice-cream"></i> Sundae Cups
+        </button>
+        <button class="tab-btn" data-target="waffles">
+          <i class="fa-solid fa-stroopwafel"></i> Waffles
+        </button>
+        <button class="tab-btn" data-target="chimney">
+          <i class="fa-solid fa-fire-flame-curved"></i> Sweet Chimney
+        </button>
+        <button class="tab-btn" data-target="soda">
+          <i class="fa-solid fa-bottle-water"></i> Soda
+        </button>
+        <button class="tab-btn" data-target="beans">
+          <i class="fa-solid fa-bag-shopping"></i> Coffee Beans
+        </button>
+      </div>
+    </div>
+
+    <!-- ======== HOT COFFEE ======== -->
+    <div class="menu-section" id="hot-coffee">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Hot</em> Coffees</h2>
+          <p>Classic espresso-based drinks crafted with premium beans.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Espresso Single</h4>
+              <p>اسبريسو</p>
+            </div>
+            <div class="menu-card-price">35 – 50</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Espresso Double</h4>
+              <p>اسبريسو دبل</p>
+            </div>
+            <div class="menu-card-price">45 – 60</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Macchiato Single</h4>
+              <p>سنجل اسبريسو + فوم لبن</p>
+            </div>
+            <div class="menu-card-price">50 – 60</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Macchiato Double</h4>
+              <p>دبل اسبريسو + فوم لبن</p>
+            </div>
+            <div class="menu-card-price">60 – 70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Cortado</h4>
+              <p>دبل اسبريسو + لبن (مركز أكثر)</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Flat White</h4>
+              <p>فلات وايت</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Cappuccino</h4>
+              <p>كابتشينو</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Pistachio Cappuccino</h4>
+              <p>كابتشينو فسدق</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Americano</h4>
+              <p>امريكانو</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Americano with Milk</h4>
+              <p>امريكانو باللبن</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Coffee Latte</h4>
+              <p>كوفي لاتيه</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Spanish Latte</h4>
+              <p>سبانش لاتيه</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Caramel Latte</h4>
+              <p>لاتيه كراميل</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Lotus Latte</h4>
+              <p>لاتيه لوتس</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== HOT DRINKS ======== -->
+    <div class="menu-section" id="hot-drinks">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Hot</em> Drinks</h2>
+          <p>Warm, comforting drinks for every season.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Apple Cider</h4>
+              <p>سيدر تفاح</p>
+            </div>
+            <div class="menu-card-price">70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Chocolate</h4>
+              <p>هوت شوكليت</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Chocolate Marshmallow</h4>
+              <p>هوت شوكليت مارشميلو</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Chocolate Cream</h4>
+              <p>هوت شوكليت بالكريمه</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Oreo</h4>
+              <p>هوت اوريو</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Oreo Cream</h4>
+              <p>هوت اوريو بالكريمة</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Lotus</h4>
+              <p>هوت لوتس</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Hot Lotus Cream</h4>
+              <p>هوت لوتس بالكريمه</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Plain Sahlab</h4>
+              <p>سحلب ساده</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Sahlab with Nuts</h4>
+              <p>سحلب بالمكسرات</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Pistachio Sahlab</h4>
+              <p>سحلب فسدق</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Regular Tea</h4>
+              <p>شاي — Takeaway / Dine-in</p>
+            </div>
+            <div class="menu-card-price">20 – 50</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Flavored Tea</h4>
+              <p>شاي فليفر (نعناع / قرنفل)</p>
+            </div>
+            <div class="menu-card-price">25 – 50</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Herbs</h4>
+              <p>اعشاب (نعناع / ينسون / قرفة)</p>
+            </div>
+            <div class="menu-card-price">25 – 50</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>White Tea</h4>
+              <p>شاي باللبن</p>
+            </div>
+            <div class="menu-card-price">50 – 70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Karak Tea</h4>
+              <p>شاي كرك</p>
+            </div>
+            <div class="menu-card-price">60 – 80</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== ICED COFFEE ======== -->
+    <div class="menu-section" id="iced-coffee">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Iced</em> Coffees</h2>
+          <p>Chilled espresso perfection — cubes or blended.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Latte</h4>
+              <p>ايس لاتيه — Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Cappuccino</h4>
+              <p>دبل اسبريسو + لبن + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Caramel Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Mocha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced White Mocha</h4>
+              <p>ايس وايت موكا</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Spanish Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Cookies Mocha</h4>
+              <p>ايس موكا + فليفر شوكليت كوكيز</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Toffee Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Lotus Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Pistachio Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Americano</h4>
+              <p>دبل اسبريسو + ثلج مكعبات + مياه</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Macchiato</h4>
+              <p>دبل اسبريسو + ثلج + فوم لبن</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced V60</h4>
+              <p>قهوة مختصة</p>
+            </div>
+            <div class="menu-card-price">120 – 150</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== MATCHA ======== -->
+    <div class="menu-section" id="matcha">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Iced</em> Matcha</h2>
+          <p>Premium matcha in a variety of flavors — cubes or blended.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Matcha Latte</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Vanilla Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Coconut Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Spanish Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Mango Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Strawberry Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Peach Matcha</h4>
+              <p>Cubes / Blended</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Coconut Milk Matcha</h4>
+              <p>ايس ماتشا حليب جوز هند</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Almond Milk Matcha</h4>
+              <p>ايس ماتشا حليب لوز</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== ICED TEA ======== -->
+    <div class="menu-section" id="iced-tea">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Iced</em> Tea</h2>
+          <p>Refreshing iced teas brewed to perfection.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced Tea</h4>
+              <p>ايس تي</p>
+            </div>
+            <div class="menu-card-price">70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Iced White Tea</h4>
+              <p>ايس وايت تي</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Peach Iced Tea</h4>
+              <p>ايس تي خوخ</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Passion Fruit Iced Tea</h4>
+              <p>ايس تي باشون فروت</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Strawberry Iced Tea</h4>
+              <p>ايس تي فراوله</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Mango Iced Tea</h4>
+              <p>ايس تي مانجو</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Lemon Mint Iced Tea</h4>
+              <p>ايس تي ليمون نعناع</p>
+            </div>
+            <div class="menu-card-price">70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Karak Iced Tea</h4>
+              <p>ايس تي كرك</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== MILKSHAKES ======== -->
+    <div class="menu-section" id="milkshakes">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Milk</em>shakes</h2>
+          <p>Thick, creamy shakes topped with whipped cream.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Vanilla Milkshake</h4>
+              <p>ميلك شيك فانيليا</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chocolate Milkshake</h4>
+              <p>ميلك شيك شوكليت</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Caramel Milkshake</h4>
+              <p>ميلك شيك كراميل</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Mango Milkshake</h4>
+              <p>ميلك شيك مانجو</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Strawberry Milkshake</h4>
+              <p>ميلك شيك فراوله</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Blueberry Milkshake</h4>
+              <p>ميلك شيك توت</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Nutella Milkshake</h4>
+              <p>ميلك شيك نوتيلا</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Lotus Milkshake</h4>
+              <p>ميلك شيك لوتس</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Oreo Milkshake</h4>
+              <p>ميلك شيك اوريو</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Pistachio Milkshake</h4>
+              <p>ميلك شيك فسدق</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Coffee Milkshake</h4>
+              <p>ميلك شيك كوفي</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Rocher Milkshake</h4>
+              <p>ميلك شيك روشيه</p>
+            </div>
+            <div class="menu-card-price">150</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== SUNDAE ======== -->
+    <div class="menu-section" id="sundae">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2>Sundae <em>Cups</em></h2>
+          <p>Soft serve ice cream in irresistible flavors.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Vanilla Sundae</h4>
+              <p>ايس كريم سوفت حليب ساده</p>
+            </div>
+            <div class="menu-card-price">70</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chocolate Sundae</h4>
+              <p>ايس كريم سوفت + صوص دارك شوكليت</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Caramel Sundae</h4>
+              <p>ايس كريم سوفت + صوص كراميل</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Blueberry Sundae</h4>
+              <p>ايس كريم سوفت + صوص توت</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Strawberry Sundae</h4>
+              <p>ايس كريم سوفت + صوص فراوله</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Mango Sundae</h4>
+              <p>ايس كريم سوفت + صوص مانجو</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Passion Fruit Sundae</h4>
+              <p>ايس كريم سوفت + صوص باشون فروت</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Peach Sundae</h4>
+              <p>ايس كريم سوفت + صوص خوخ</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Nutella Sundae</h4>
+              <p>ايس كريم سوفت + صوص نوتيلا</p>
+            </div>
+            <div class="menu-card-price">80</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Pistachio Sundae</h4>
+              <p>ايس كريم سوفت + صوص فسدق</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Rafaleo Lotus Sundae</h4>
+              <p>ايس كريم سوفت + صوص لوتس + قطع بسكويت لوتس</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Rafaleo Oreo Sundae</h4>
+              <p>ايس كريم سوفت + صوص شوكليت + قطع بسكويت اوريو</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== WAFFLES ======== -->
+    <div class="menu-section" id="waffles">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Waffle</em></h2>
+          <p>Golden crispy waffles with the most indulgent toppings.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Nutella</h4>
+              <p>وافل + صوص نوتيلا</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Nutella with Banana</h4>
+              <p>وافل + صوص نوتيلا + قطع موز</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Nutella with Nuts</h4>
+              <p>وافل + صوص نوتيلا + مكسرات</p>
+            </div>
+            <div class="menu-card-price">150</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Mix Chocolate</h4>
+              <p>وافل + صوص نوتيلا + صوص وايت شوكليت</p>
+            </div>
+            <div class="menu-card-price">110</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Hazelnut</h4>
+              <p>وافل + صوص نوتيلا + مكسرات بندق</p>
+            </div>
+            <div class="menu-card-price">150</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Ferrero Rocher</h4>
+              <p>وافل + صوص نوتيلا + بندق + فريرو روشيه</p>
+            </div>
+            <div class="menu-card-price">200</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Oreo</h4>
+              <p>وافل + صوص نوتيلا + صوص وايت شوكليت + قطع اوريو</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Lotus</h4>
+              <p>وافل + صوص لوتس + قطع لوتس</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Waffle Pistachio</h4>
+              <p>وافل + صوص فسدق + مكسرات فسدق</p>
+            </div>
+            <div class="menu-card-price">190</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== CHIMNEY ======== -->
+    <div class="menu-section" id="chimney">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2>Sweet <em>Chimney</em></h2>
+          <p>
+            Our signature rolled pastry — crispy outside, soft inside,
+            irresistible always.
+          </p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Nutella</h4>
+              <p>نوتيلا + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Nutella with Banana</h4>
+              <p>نوتيلا + شرائح موز + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Nutella with Nuts</h4>
+              <p>نوتيلا + مكسرات + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">170</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Hazelnut</h4>
+              <p>نوتيلا + بندق + ايس كريم</p>
+            </div>
+            <div class="menu-card-price">190</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Ferrero Rocher</h4>
+              <p>نوتيلا + بندق + فريرو روشيه + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">220</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Pistachio</h4>
+              <p>صوص فسدق + قطع فسدق + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">210</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Oreo</h4>
+              <p>نوتيلا + صوص وايت شوكليت + بسكويت اوريو + ايس كريم</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Mix Chocolate</h4>
+              <p>نوتيلا + صوص وايت شوكليت + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">120</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Chimney Lotus</h4>
+              <p>صوص لوتس + بسكويت لوتس + ايس كريم سوفت</p>
+            </div>
+            <div class="menu-card-price">140</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== SODA ======== -->
+    <div class="menu-section" id="soda">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2><em>Soda</em> & Drinks</h2>
+          <p>Fizzy, fruity refreshments.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Redbull Lavandy</h4>
+              <p>ريدبول + بلو بيري + تفاح + ثلج</p>
+            </div>
+            <div class="menu-card-price">140</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Redbull Mojito</h4>
+              <p>ريدبول + شرائح ليمون + نعناع + فليفر موهيتو + ثلج</p>
+            </div>
+            <div class="menu-card-price">140</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Wild Soda Blueberry</h4>
+              <p>صودا ليمون + بلو بيري + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Wild Soda Passion Fruit</h4>
+              <p>صودا ليمون + باشون فروت + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Wild Soda Mixberry</h4>
+              <p>صودا ليمون + ميكس بيري + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Wild Soda Peach</h4>
+              <p>صودا ليمون + خوخ + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Wild Soda Strawberry</h4>
+              <p>صودا ليمون + فراوله + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">90</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Virgin Mojito</h4>
+              <p>صودا ليمون + نعناع + فليفر موهيتو + شرائح ليمون + ثلج</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Blue Passion</h4>
+              <p>بلو باشون</p>
+            </div>
+            <div class="menu-card-price">100</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Small Water</h4>
+              <p>مياه</p>
+            </div>
+            <div class="menu-card-price">10 – 20</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Soda Can</h4>
+              <p>كان صودا</p>
+            </div>
+            <div class="menu-card-price">40 – 60</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Redbull</h4>
+              <p>اسأل عن الطعم المتاح</p>
+            </div>
+            <div class="menu-card-price">80 – 110</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section-divider"></div>
+
+    <!-- ======== COFFEE BEANS ======== -->
+    <div class="menu-section" id="beans">
+      <div class="container">
+        <div class="menu-cat-header">
+          <h2>Coffee <em>Beans</em></h2>
+          <p>Take the Netro experience home with our premium coffee beans.</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Quarter Kilo — Plain Turkish</h4>
+              <p>فاتح / وسط / غامق</p>
+            </div>
+            <div class="menu-card-price">230</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Eighth Kilo — Plain Turkish</h4>
+              <p>فاتح / وسط / غامق</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Quarter Kilo — Roasted Turkish</h4>
+              <p>فاتح / وسط / غامق</p>
+            </div>
+            <div class="menu-card-price">230</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Eighth Kilo — Roasted Turkish</h4>
+              <p>فاتح / وسط / غامق</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Quarter Kilo Espresso</h4>
+              <p>٨٠٪ ارابيكا + ٢٠٪ ريبوستا</p>
+            </div>
+            <div class="menu-card-price">230</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Eighth Kilo Espresso</h4>
+              <p>٨٠٪ ارابيكا + ٢٠٪ ريبوستا</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Quarter Kilo — RHF</h4>
+              <p>بن بنكهة التفاح</p>
+            </div>
+            <div class="menu-card-price">230</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Eighth Kilo — RHF</h4>
+              <p>بن بنكهة التفاح</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Quarter Kilo — Hazelnut</h4>
+              <p>بن بنكهة البندق + قطع بندق</p>
+            </div>
+            <div class="menu-card-price">230</div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-card-info">
+              <h4>Eighth Kilo — Hazelnut</h4>
+              <p>بن بنكهة البندق + قطع بندق</p>
+            </div>
+            <div class="menu-card-price">130</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Netro" class="footer-logo" />
+          <p>
+            Netro Cafe & More — your cozy destination for specialty coffee,
+            chimney cakes, and unforgettable flavors.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://instagram.com/Netro.egy" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reservation.php">Reservations</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#hot-coffee">Hot Coffee</a></li>
+            <li><a href="#iced-coffee">Iced Coffee</a></li>
+            <li><a href="#matcha">Matcha</a></li>
+            <li><a href="#chimney">Sweet Chimney</a></li>
+            <li><a href="#waffles">Waffles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> Mit Ghamr, Egypt</li>
+            <li><i class="fa-solid fa-clock"></i> Daily: 9 AM – 1 AM</li>
+            <li><i class="fa-brands fa-instagram"></i> Netro.egy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Netro Cafe & More. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
