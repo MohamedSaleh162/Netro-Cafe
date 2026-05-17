@@ -1,8 +1,3 @@
-/* ===================================================
-   NETRO CAFE — Main Stylesheet  (Responsive Rewrite)
-   Palette: Dark #1a0e0a | Gold #c87941 | Cream #fdf6ee
-=================================================== */
-
 /* ---- Reset & Base ---- */
 *,
 *::before,
@@ -173,23 +168,31 @@ ul {
   color: var(--dark);
 }
 
-/* ===================================================
-   NAVBAR
-=================================================== */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 18px 0;
+  padding: 10px 0;
   transition: var(--trans);
+  /* position: sticky; */
+  /* background-color: var(--dark); */
 }
 .navbar.scrolled {
   background: rgba(26, 14, 10, 0.97);
   backdrop-filter: blur(12px);
   padding: 12px 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  /* position: sticky; */
+  /* background-color: var(--dark); */
+}
+
+@media (max-width: 768px) {
+  .navbar.scrolled {
+    backdrop-filter: none;
+  }
 }
 .nav-container {
   display: flex;
@@ -272,7 +275,7 @@ ul {
   background: var(--gold-lt) !important;
 } */
 
-/* Hamburger — hidden by default */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -307,9 +310,8 @@ ul {
   display: block;
 }
 
-/* ===================================================
-   HERO
-=================================================== */
+/* HERO */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -415,9 +417,8 @@ ul {
   }
 }
 
-/* ===================================================
-   MARQUEE STRIP
-=================================================== */
+/* MARQUEE STRIP */
+
 .marquee-strip {
   background: var(--gold);
   overflow: hidden;
@@ -446,9 +447,8 @@ ul {
   }
 }
 
-/* ===================================================
-   ABOUT TEASER
-=================================================== */
+/* ABOUT TEASER */
+
 .about-visual {
   position: relative;
 }
@@ -540,9 +540,8 @@ ul {
   font-size: 1rem;
 }
 
-/* ===================================================
-   CATEGORIES GRID
-=================================================== */
+/* CATEGORIES GRID */
+
 .cat-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -604,9 +603,8 @@ ul {
   letter-spacing: 1px;
 }
 
-/* ===================================================
-   STATS SECTION
-=================================================== */
+   /* STATS SECTION */
+
 .stats-section {
   background: var(--gold);
   padding: 60px 0;
