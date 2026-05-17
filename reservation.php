@@ -1,5 +1,4 @@
 <?php
-// Only show flash messages when redirected from reservation.php handler
 $show_success = isset($_GET['success']);
 $show_error   = isset($_GET['error']);
 ?>
@@ -29,7 +28,6 @@ $show_error   = isset($_GET['error']);
         <li><a href="about.html">About</a></li>
         <li><a href="reservation.php" class="active">Reserve a Table</a></li>
         <li><a href="contact.php">Contact</a></li>
-        <!-- <li><a href="login.php" class="nav-btn">Sign In</a></li> -->
       </ul>
       <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
