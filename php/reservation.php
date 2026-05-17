@@ -1,5 +1,5 @@
 <?php
-// ===== Netro Cafe — Reservation Handler =====
+
 require_once __DIR__ . '/config.php';
 session_start();
 
