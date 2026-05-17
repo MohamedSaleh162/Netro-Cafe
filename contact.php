@@ -13,7 +13,6 @@ $show_error   = isset($_GET['error']);
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    /* Nuclear fix — force all text inside info card to be visible */
     .contact-info-card,
     .contact-info-card * {
       box-sizing: border-box;
@@ -130,7 +129,6 @@ $show_error   = isset($_GET['error']);
         <li><a href="about.html">About</a></li>
         <li><a href="reservation.php">Reserve a Table</a></li>
         <li><a href="contact.php" class="active">Contact</a></li>
-        <!-- <li><a href="login.php" class="nav-btn">Sign In</a></li> -->
       </ul>
       <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
