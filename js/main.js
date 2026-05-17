@@ -1,4 +1,3 @@
-// ===== NETRO CAFE — main.js =====
 
 document.addEventListener("DOMContentLoaded", () => {
   // ---- Navbar scroll effect ----
@@ -56,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     revealEls.forEach((el) => observer.observe(el));
 
-    // Also immediately reveal anything already in the viewport
     setTimeout(() => {
       revealEls.forEach((el) => {
         const rect = el.getBoundingClientRect();
@@ -200,21 +198,19 @@ document.addEventListener("DOMContentLoaded", () => {
       el.classList.add("reveal");
     });
   // Re-run observer after adding classes
-  if (revealEls.length === 0) {
-    const newReveals = document.querySelectorAll(".reveal");
-    const obs2 = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            obs2.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.1 },
-    );
-    newReveals.forEach((el) => obs2.observe(el));
-  }
+  const newReveals = document.querySelectorAll(".reveal:not(.visible)");
+  const obs2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("visible");
+          obs2.unobserve(e.target);
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+  newReveals.forEach((el) => obs2.observe(el));
 });
 
 // ---- Helpers ----
